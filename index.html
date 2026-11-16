@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How Untapped is learning, testing and improving the talent experience, from first contact through placement and beyond.">
+<meta name="theme-color" content="#101820">
+<title>Talent Experience | Untapped</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--black:#101820;--red:#DA291C;--orange:#FF6900;--yellow:#FFC600;--violet:#5B2A86;--white:#fff;--paper:#F2F1EE;--ink:#14181d;--soft:#4a5058;--line:rgba(16,24,32,.13);--line-dark:rgba(255,255,255,.17);--serif:'Fraunces',Georgia,serif;--sans:'Manrope',Arial,sans-serif;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit}h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;letter-spacing:-.02em;margin:0 0 .65em}p{margin:.0 0 1em}.wrap{max-width:var(--max);margin:auto;padding:0 clamp(1.25rem,4vw,2.5rem)}.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:0 0 1rem}.eyebrow.light{color:var(--yellow)}
+header{position:sticky;top:0;z-index:20;background:rgba(242,241,238,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.head{max-width:var(--max);margin:auto;padding:.8rem clamp(1.25rem,4vw,2.5rem);display:flex;align-items:center;justify-content:space-between;gap:1rem}.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;font-weight:800}.mark{width:36px;height:26px;border:2px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-size:.62rem}.brand small{font-weight:500;color:var(--soft);border-left:1px solid var(--line);padding-left:.7rem;margin-left:.1rem}.nav{display:flex;gap:1.4rem;align-items:center}.nav a{text-decoration:none;color:var(--soft);font-size:.84rem;font-weight:700}.nav a:hover{color:var(--red)}.menu{display:none;border:1px solid var(--line);background:transparent;border-radius:5px;padding:.5rem .7rem;font:700 .9rem var(--sans)}
+.hero{background:var(--black);color:white;position:relative;overflow:hidden;padding:clamp(4.5rem,10vw,7.5rem) 0 5rem}.glow{position:absolute;inset:-15% -8%;background:radial-gradient(35% 45% at 78% 20%,var(--yellow),transparent 70%),radial-gradient(45% 55% at 90% 45%,var(--orange),transparent 72%),radial-gradient(48% 65% at 75% 75%,var(--red),transparent 75%),radial-gradient(35% 45% at 100% 100%,var(--violet),transparent 75%);filter:blur(65px);opacity:.72}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--black) 15%,rgba(16,24,32,.65) 58%,rgba(16,24,32,.2))}.hero .wrap{position:relative;z-index:1}.hero-copy{max-width:760px}.hero h1{font-size:clamp(2.8rem,6vw,5rem);max-width:780px}.tagline{font:italic clamp(1.2rem,2vw,1.55rem) var(--serif);color:var(--yellow);margin-bottom:1.2rem}.intro{font-size:1.12rem;color:rgba(255,255,255,.82);max-width:620px}.actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem}.btn{display:inline-flex;text-decoration:none;font-weight:800;font-size:.9rem;padding:.85rem 1.25rem;border:1px solid transparent;border-radius:3px}.primary{background:var(--red);color:white}.ghost{border-color:var(--line-dark);color:white}.btn:hover{filter:brightness(1.1)}
+section{padding:clamp(3.5rem,7vw,6rem) 0}.section-head{max-width:690px;margin-bottom:2.5rem}.section-head h2{font-size:clamp(2rem,4vw,3.2rem)}.lede{font-size:1.1rem;color:var(--soft);max-width:65ch}.dark{background:var(--black);color:white}.dark .lede,.dark p{color:rgba(255,255,255,.78)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.pillar{background:var(--paper);padding:1.6rem}.pillar b{display:block;margin-bottom:.45rem}.pillar p{color:var(--soft);margin:0;font-size:.94rem}
+.journey{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.journey-item{background:var(--paper);padding:1.25rem;min-height:130px}.journey-item span{display:block;color:var(--red);font:1.4rem var(--serif);margin-bottom:.4rem}.journey-item b{font-size:.92rem}
+.cycle{display:grid;grid-template-columns:repeat(6,1fr);gap:.55rem;margin-top:2rem}.cycle div{border:1px solid var(--line-dark);padding:1rem .6rem;text-align:center;font-weight:800;font-size:.82rem}.cycle div:first-child{border-color:var(--yellow);color:var(--yellow)}
+.roadmap{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.phase{background:var(--paper);padding:1.7rem;display:flex;gap:1rem;align-items:flex-start}.phase-no{font:1.7rem var(--serif);color:var(--red);min-width:2rem}.phase h3{font:800 1.05rem var(--sans);margin:.1rem 0 .45rem}.phase p{font-size:.91rem;color:var(--soft);margin:0}.status{display:inline-block;margin-top:.8rem;padding:.25rem .55rem;border:1px solid var(--line);font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--soft)}.phase.featured{background:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}.note{border-left:3px solid var(--yellow);padding:.25rem 0 .25rem 1.2rem}.note strong{display:block;margin-bottom:.3rem}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0}.stat{border:1px solid var(--line-dark);padding:1.25rem}.stat strong{font:2.4rem var(--serif);color:var(--yellow);display:block}.stat span{font-size:.84rem;color:rgba(255,255,255,.75)}
+.resource-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}.resource-list li{padding:1rem 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem}.resource-list a{color:var(--red);font-weight:800;text-decoration:none}.resource-list a:hover{text-decoration:underline}
+.improve{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.improve article{border:1px solid var(--line);padding:1.35rem}.improve h3{font:800 1rem var(--sans)}.improve p{font-size:.9rem;color:var(--soft);margin:0}
+footer{background:var(--black);color:white;padding:2.5rem 0}footer p{color:rgba(255,255,255,.7);font-size:.86rem;margin:.4rem 0 0}.foot{display:flex;justify-content:space-between;gap:2rem;align-items:center}
+@media(max-width:850px){.nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);padding:1.2rem 1.5rem 1.5rem;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.nav.open{display:flex}.menu{display:block}.journey{grid-template-columns:repeat(2,1fr)}.cycle{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){.pillars,.roadmap,.two,.improve,.stat-grid{grid-template-columns:1fr}.foot{align-items:flex-start;flex-direction:column}.brand small{display:none}.phase{padding:1.3rem}.journey-item{min-height:105px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="head">
+<a class="brand" href="#top" aria-label="Untapped Talent Experience home"><span class="mark">un</span><span>untapped</span><small>Talent Experience</small></a>
+<button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="nav" id="nav" aria-label="Main navigation"><a href="#approach">Our approach</a><a href="#journey">Candidate journey</a><a href="#roadmap">Roadmap</a><a href="#insights">Insights</a><a href="#resources">Resources</a></nav>
+</div></header>
+<main id="top">
+<div class="hero"><div class="glow"></div><div class="wrap"><div class="hero-copy">
+<p class="eyebrow light">Untapped · Talent Delivery</p>
+<h1>A better experience, at every step.</h1>
+<p class="tagline">Thoughtful by design. Better through learning.</p>
+<p class="intro">Talent Experience is how we make every interaction with Untapped feel clear, considered and human. This is our space to share what we're building, what we're learning and how we're making the candidate journey better over time.</p>
+<div class="actions"><a class="btn primary" href="#roadmap">Explore the roadmap</a><a class="btn ghost" href="#journey">Follow the journey</a></div>
+</div></div></div>
+
+<section id="approach"><div class="wrap">
+<div class="section-head"><p class="eyebrow">Why this matters</p><h2>It's not just the outcome. It's how people experience getting there.</h2><p class="lede">Every message, conversation, interview and update shapes how a candidate feels about the process. We want people to feel informed, prepared, respected and supported, whether they move forward or not.</p></div>
+<div class="pillars">
+<div class="pillar"><b>Human first</b><p>Make space for real people, individual circumstances and honest conversations.</p></div>
+<div class="pillar"><b>Clear and considered</b><p>Set expectations, explain what happens next and keep communication thoughtful.</p></div>
+<div class="pillar"><b>Always learning</b><p>Use feedback and observation to understand what helps, what gets in the way and what to improve.</p></div>
+</div>
+<div style="margin-top:3.5rem"><p class="eyebrow">How we work</p><h2>Small improvements. Real learning.</h2><p class="lede">We don't need to get everything perfect first time. We test ideas, pay attention to what happens and refine the experience as we learn.</p>
+<div class="cycle"><div>01 · Ideate</div><div>02 · Design</div><div>03 · Test</div><div>04 · Observe</div><div>05 · Refine</div><div>06 · Review</div></div></div>
+</div></section>
+
+<section class="dark" id="journey"><div class="wrap">
+<div class="section-head"><p class="eyebrow light">The candidate journey</p><h2>One connected experience, from first hello and beyond.</h2><p class="lede">The journey doesn't stop at an interview or an accepted offer. Each stage should connect naturally to the next, with clear communication and care throughout.</p></div>
+<div class="journey">
+<div class="journey-item"><span>01</span><b>Outreach & first contact</b></div><div class="journey-item"><span>02</span><b>Booking & preparation</b></div><div class="journey-item"><span>03</span><b>Screening conversation</b></div><div class="journey-item"><span>04</span><b>Interview guidance</b></div><div class="journey-item"><span>05</span><b>Interview & assessment</b></div><div class="journey-item"><span>06</span><b>Feedback & next steps</b></div><div class="journey-item"><span>07</span><b>Offer & pre-start</b></div><div class="journey-item"><span>08</span><b>Placement & beyond</b></div>
+</div>
+</div></section>
+
+<section id="roadmap"><div class="wrap">
+<div class="section-head"><p class="eyebrow">The roadmap</p><h2>Building the experience, step by step.</h2><p class="lede">Eight connected phases help us move from useful foundations to a more joined-up Talent Experience system. The roadmap is designed to evolve as we learn, not to be a fixed checklist.</p></div>
+<div class="roadmap">
+<article class="phase featured"><span class="phase-no">01</span><div><h3>Candidate Resource Hub</h3><p>A useful starting point for candidates, with information about Untapped, the recruitment process, EOR employment and interview preparation.</p><span class="status">Live · Refining</span></div></article>
+<article class="phase featured"><span class="phase-no">02</span><div><h3>Candidate Journey & Feedback</h3><p>Understand the full journey and introduce a structured way to listen, spot patterns and learn from candidate feedback.</p><span class="status">Pilot · Initial findings</span></div></article>
+<article class="phase"><span class="phase-no">03</span><div><h3>Interview Experience</h3><p>Make interview stages easier to understand, with practical preparation guidance and consistent recruiter support.</p><span class="status">Designed · Pilot next</span></div></article>
+<article class="phase"><span class="phase-no">04</span><div><h3>Offer Experience</h3><p>Make offers clear and considered, checking expectations, practical details and candidate confidence before acceptance.</p><span class="status">Developed with Phase 5</span></div></article>
+<article class="phase"><span class="phase-no">05</span><div><h3>Pre- & Post-Placement Experience</h3><p>Support a smoother transition from acceptance through pre-start touchpoints and early placement check-ins.</p><span class="status">Developed with Phase 4</span></div></article>
+<article class="phase"><span class="phase-no">06</span><div><h3>Insights & Reporting</h3><p>Bring together meaningful measures, feedback and observations to understand what is working and where to focus.</p><span class="status">Planned</span></div></article>
+<article class="phase"><span class="phase-no">07</span><div><h3>Scale</h3><p>Share what works across the wider team and make useful practices easier to adopt consistently.</p><span class="status">Future phase</span></div></article>
+<article class="phase"><span class="phase-no">08</span><div><h3>Full Talent Experience System</h3><p>Connect the journey, resources, team practices and ongoing learning into one sustainable approach.</p><span class="status">Longer-term vision</span></div></article>
+</div>
+<p style="font-size:.85rem;color:var(--soft);margin-top:1rem">Phases 4 and 5 are being developed together as <strong>Offer to Onboarding & Beyond</strong>, while remaining separate parts of the roadmap.</p>
+</div></section>
+
+<section class="dark" id="insights"><div class="wrap">
+<div class="section-head"><p class="eyebrow light">What we're learning</p><h2>Listen first. Look for patterns. Improve with care.</h2><p class="lede">Early feedback gives us useful direction, but we stay mindful of sample size. We share themes and learning rather than treating a small number of responses as a complete picture.</p></div>
+<div class="two">
+<div><h3>Early candidate feedback</h3><p>In an initial September 2026 feedback snapshot, five candidates responded. All five rated their overall experience 5 out of 5 and gave an NPS score of 10, resulting in an early NPS of +100.</p><p>Positive themes included warm recruiter interactions, clear communication, useful preparation material and constructive feedback.</p></div>
+<div><div class="stat-grid"><div class="stat"><strong>5/5</strong><span>Overall experience rating</span></div><div class="stat"><strong>+100</strong><span>Early Net Promoter Score</span></div><div class="stat"><strong>2/5</strong><span>Mentioned waiting for client decisions as a stress point</span></div></div></div>
+</div>
+<div class="note"><strong>One opportunity we're taking forward</strong><p>Waiting for client decisions can create uncertainty. Where timelines are not confirmed, we can still acknowledge the wait and send a brief update so candidates know they haven't been forgotten.</p></div>
+<p style="font-size:.84rem;margin-top:1.5rem">This is a very small early sample, collected 1–9 September 2026. It is directional feedback, not representative research and not proof of cause and effect. We will continue gathering feedback and reviewing themes over time.</p>
+</div></section>
+
+<section><div class="wrap">
+<div class="section-head"><p class="eyebrow">How we improve</p><h2>Notice the details that make a difference.</h2><p class="lede">We look at the experience from both sides: what candidates tell us, and what recruiters notice while guiding people through the process.</p></div>
+<div class="improve">
+<article><h3>Candidate perspective</h3><p>Clarity, preparation, communication, confidence, respect and how supported people feel at each stage.</p></article>
+<article><h3>Recruiter perspective</h3><p>Repeated questions, missing information, process friction, delays and opportunities to make support more consistent.</p></article>
+<article><h3>Practical outcomes</h3><p>Small changes we can test, review and keep when they genuinely make the experience better.</p></article>
+</div>
+</div></section>
+
+<section id="resources"><div class="wrap">
+<div class="section-head"><p class="eyebrow">Useful resources</p><h2>Tools that make the journey easier.</h2><p class="lede">A growing collection of practical resources for candidates and the Talent Delivery team. These will develop as each phase is tested and refined.</p></div>
+<ul class="resource-list">
+<li><span>Candidate Resource Hub</span><a href="https://candidateresourcehub.github.io/resource/" target="_blank" rel="noopener">Visit the hub ↗</a></li>
+<li><span>Candidate feedback survey</span><a href="https://forms.gle/qPyKfaxXCaaJGQAMA" target="_blank" rel="noopener">Open the survey ↗</a></li>
+<li><span>Interview preparation guide</span><span>Being developed</span></li>
+<li><span>Internal Interview Experience Playbook</span><span>Being developed</span></li>
+<li><span>Offer to Onboarding & Beyond checklists</span><span>Being developed</span></li>
+</ul>
+</div></section>
+
+<section class="dark"><div class="wrap">
+<div class="section-head"><p class="eyebrow light">A shared effort</p><h2>Good experiences are built together.</h2><p class="lede">Talent Experience isn't a separate task or a one-off project. It is shaped by the everyday conversations and decisions we make as a team. If something feels unclear, if a candidate keeps asking the same question, or if you spot a simple way to make a step better, that's useful learning.</p></div>
+<p>Share the observation. Try a thoughtful improvement. Notice what changes. Keep what works.</p>
+</div></section>
+</main>
+<footer><div class="wrap foot"><div><a class="brand" href="#top" style="color:white"><span class="mark" style="border-color:white">un</span><span>untapped</span></a><p>Talent Experience · A continuous learning project</p></div><p>Thoughtful by design. Better through learning.</p></div></footer>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open)});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
+</script>
+</body>
+</html>
