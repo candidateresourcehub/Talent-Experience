@@ -34,6 +34,21 @@ footer{background:var(--charcoal);color:white;padding:2rem 0;border-top:1px soli
 @media(max-width:850px){.nav{gap:.6rem}.nav a{font-size:.7rem}.journey{grid-template-columns:repeat(2,1fr)}.cycle{grid-template-columns:repeat(3,1fr)}.pillars,.cards{grid-template-columns:1fr 1fr}}
 @media(max-width:850px){.hero-grid{grid-template-columns:1fr}.hero-display{min-height:0;font-size:clamp(3.2rem,12vw,5rem);flex-direction:row;gap:.22em;flex-wrap:wrap;margin-top:1rem}.hero-display:after{width:100px;height:100px;bottom:-35%;right:10%}.touchpoint-grid{grid-template-columns:1fr}}@media(max-width:650px){.nav{display:none}.menu{display:block;background:transparent;border:1px solid var(--line);padding:.5rem}.nav.open{display:flex;position:absolute;top:100%;left:0;right:0;background:var(--paper);padding:1rem;flex-direction:column}.roadmap,.feedback,.measures,.pillars,.cards{grid-template-columns:1fr}.resource-row{grid-template-columns:1fr}.resource-link{justify-self:start}.brand small{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Hero refinement: balanced columns, tighter copy and a better-aligned title */
+.hero{padding:4.8rem 0}
+.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);align-items:start;gap:clamp(2rem,5vw,5rem)}
+.hero-copy{max-width:620px}
+.hero h1{font-size:clamp(2.45rem,4.1vw,3.7rem);line-height:1.04;letter-spacing:-.035em;max-width:15ch;margin:.55rem 0 .8rem}
+.tag{font-size:1.18rem;line-height:1.35;margin:.3rem 0 .9rem}
+.intro{font-size:.98rem;line-height:1.68;max-width:58ch}
+.actions{margin-top:1.25rem}
+.company-links{margin-top:1.2rem}
+.company-links a{font-size:.82rem}
+.hero-display{align-self:start;justify-content:flex-start;min-height:0;margin-top:2.1rem;padding:.15rem 0 1.2rem;font-size:clamp(3.8rem,6.4vw,6rem);line-height:.98;letter-spacing:-.055em;gap:.06em}
+.hero-display:after{width:clamp(115px,13vw,175px);height:clamp(115px,13vw,175px);top:-1.3rem;right:4%;bottom:auto;opacity:.55}
+@media(max-width:1100px) and (min-width:851px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(245px,.85fr);gap:2rem}.hero-display{font-size:clamp(3.3rem,5.8vw,4.8rem)}.hero h1{font-size:clamp(2.35rem,3.8vw,3.2rem)}}
+@media(max-width:850px){.hero{padding:3.8rem 0}.hero-grid{grid-template-columns:1fr;gap:1rem}.hero-copy{max-width:680px}.hero h1{font-size:clamp(2.35rem,6vw,3.3rem)}.hero-display{margin-top:.4rem;padding:0;font-size:clamp(3.2rem,10vw,4.8rem);line-height:1;gap:.2em;flex-direction:row;flex-wrap:wrap}.hero-display:after{width:100px;height:100px;top:-.6rem;right:auto;left:48%;bottom:auto}}
+@media(max-width:520px){.hero{padding:3.2rem 0}.hero h1{font-size:clamp(2.2rem,9vw,2.8rem)}.tag{font-size:1.08rem}.intro{font-size:.94rem}.hero-display{font-size:clamp(2.9rem,12vw,4rem)}.company-links{gap:.8rem}}
 </style></head><body>
 <header><div class="head"><a class="brand" href="#top"><span class="mark">un</span><span>untapped</span><small>Talent Experience</small></a><button class="menu" id="menu" aria-expanded="false">Menu</button><nav class="nav" id="nav"><a href="#approach">Our approach</a><a href="#business-value">Why it matters</a><a href="#journey">Candidate journey</a><a href="#roadmap">Roadmap</a><a href="#feedback">Feedback</a><a href="#ownership">Ownership</a><a href="#resources">Resources</a></nav></div></header>
 
